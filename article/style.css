@@ -1,0 +1,145 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#ebebeb36;
+  color: #444;
+  font-size: 18px;
+}
+
+a {
+  color: #fd8926d9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fd8926d9;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 15px 0;
+  padding: 0; 
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  width: 900px;
+  padding: 15px;
+  margin: 20px auto;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+.benefits-item::marker {
+  color: #fd8926d9;
+  font-size: 1.4em;
+}
+ol{
+  counter-reset: num;
+  list-style-type: none;
+}
+ol li {
+  margin-bottom: 10px;
+}
+ol li:before {
+  content: counter(num)'.';
+  counter-increment: num;
+  color: #fd8926d9;
+  padding-right: 10px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  text-indent: 25px;
+  text-align: left;
+}
+.article_img_main {
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 3px dotted #fd8926d9;
+}
+.img_gunfu {
+  display: flex;
+  justify-content: center;
+
+}
+.quote {
+  position: relative;
+}
+
+.quote::before {
+  content: "“";
+  position: absolute;
+  left: -30px;
+  top: -55px;
+  color: #fd8926d9;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1;
+  font-family: "Roboto Slab", serif;
+  margin: 25px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #ebebeb;
+    text-align: center;
+}
+
+td, th {
+  border: 2px solid #ebebeb;
+  padding: 5px 0;
+}
+
+.form {
+  box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
+  padding: 30px;
+  margin: 30px;
+  border-radius: 20px;
+} 
+
+button[type="submit"] {
+  border: 2px solid;
+  padding: 10px 24px;
+  color: #fd8926d9;
+  transition: 0.4s;
+  background: #fff;
+  border-radius: 15px;
+  outline: none;
+  font-size: 16px;
+}
+button[type="submit"]:hover {
+  color: #fff;
+  background: #DC4A25;
+  border-color: #DC4A25;
+  box-shadow: 0 10px 20px rgba(220,74,37,0.6);
+}
+input [type="radio"] {
+  background-color: #fd8926d9;
+}
+.form-control {
+width: 100%;
+padding: 5px 5px;
+line-height: 1.5;
+font-size: 18px;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+fieldset {
+  border: none;
+}
